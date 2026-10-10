@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a1714">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Hikma">
+  <meta name="description" content="Hikma – das Islam-Quiz mit über 3.200 Fragen, 4 Schwierigkeitsstufen und 7 Spielmodi. Allein oder gegeneinander auf einem Handy.">
+  <title>Hikma – Islam-Quiz</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app" aria-live="polite"></div>
+  <div id="toast" role="status"></div>
+
+  <script src="data/fragen.js"></script>
+  <script src="js/engine.js"></script>
+  <!-- Spielmodi: Für einen neuen Modus einfach eine Datei in js/modi/ anlegen und hier eintragen (siehe README). -->
+  <script src="js/modi/klassik.js"></script>
+  <script src="js/modi/arena.js"></script>
+  <script src="js/modi/kopf-an-kopf.js"></script>
+  <script src="js/modi/blitz.js"></script>
+  <script src="js/modi/ueberleben.js"></script>
+  <script src="js/modi/einsatz.js"></script>
+  <script src="js/modi/leiter.js"></script>
+  <script>Hikma.starte();</script>
+</body>
+</html>
